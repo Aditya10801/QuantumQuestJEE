@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/c416e79406.js" crossorigin="anonymous"></script>
+  <link href="https://api.fontshare.com/v2/css?f[]=khand@400&f[]=array@400&display=swap" rel="stylesheet">
+</head>
+<body style="
+font-family: 'Array', sans-serif;" class="overflow-x-hidden ">
+<section>
+    <div class="lg:md:flex ">
+    <Div class="lg:md:w-1/2">
+    <header class="px-[50px] py-4 text-gray-800">
+        <div class="container flex justify-between h-16 mx-auto">
+            <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2">
+               <img class="h-20" src="peep-54.svg">
+            </a>
+            <ul class="items-stretch hidden  md:flex">
+                <li class="flex">
+                    <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 border-transparent hover:underline underline-offset-8">JEE (Mains)</a>
+                </li>
+                <li class="flex">
+                    <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 border-transparent hover:underline underline-offset-8">JEE (Advanced)</a>
+                </li>
+                <li class="flex">
+                    <a rel="noopener noreferrer" href="#" class="flex items-center px-4 -mb-1 border-b-2 border-transparent hover:underline underline-offset-8 ">BITSAT</a>
+                </li>
+                
+            </ul>
+            <button class="flex justify-end p-4 md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+
+<div class="flex flex-cols justify-align items-center px-10 mt-20">
+    <Div class="grid gap-5">
+  <div class="text-6xl font-bold " data-aos="fade-up" >Your hub for JEE PYQs</div>
+  <Div data-aos="fade-up" style="font-family: 'Khand', sans-serif;" class="text-3xl text-justify text-gray-600">Unlock your potential and conquer the Joint Entrance Examination (JEE) with confidence through our comprehensive platform designed exclusively for practicing JEE Previous Year Questions (PYQs). Whether you're gearing up for JEE Main or JEE Advanced, our platform provides you with the tools and resources you need to excel.</Div>
+  <button onclick="openLoginForm()" data-aos="fade-up" style="font-family: 'Khand', sans-serif;  box-shadow: none;" onmouseover="this.style.boxShadow='0 0 20px #000000'" onmouseout="this.style.boxShadow='none'"" class="  bg-black h-16 w-48 text-xl rounded-full hover:bg-white text-white hover:text-black border-2 hover:border-black transition ease-in-out flex flex-cols justify-center items-center">
+   
+    Get Started &nbsp; <i class="fa-solid fa-arrow-right "></i>
+  </button> 
+</Div>
+</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const menuButton = document.querySelector('.menu-button');
+  const menu = document.querySelector('.menu');
+
+  menuButton.addEventListener('click', function() {
+    menu.classList.toggle('open');
+  });
+});
+  </script>
+<div data-aos="fade-up" style="font-family: 'Khand', sans-serif;" class="hidden lg:md:block lg:md:w-1/2 bg-black h-screen border-white border-t-[30px]  border-b-[30px] border-r-[40px]  p-4 ">
+   <div class="flex flex-cols justify-center items-center h-full px-10">
+  
+    <div class=" grid gap-5">
+        <div class="flex gap-5">
+            <div class="bg-green-400 text-black rounded-full py-2  px-4 text-center">JEE (ADV) 2023</div>
+            <div class="bg-green-400 text-black rounded-full py-2  px-4 text-center">Multi correct</div>
+        </div>
+   <Div class=" border-2 border-white rounded-lg text-xl text-white p-4 " ><b>Question 1 :<Br>Let S =  (0,1) U  (1,2) U  (3,4) and T = {0,1, 2,3} . Then which of the following statements is(are)
+    true?</b></Div>
+    <div class="bg-white text-black rounded-full py-2  px-4 text-center">OPTIONS</div>
+
+    <div class="border-2 border-white rounded-lg text-xl text-white p-4 hover:bg-gray-200 hover:text-black option" data-option="A" id="optionA">(A) There are infinitely many functions from S to T</div>
+    <div class="border-2 border-white rounded-lg text-xl text-white p-4 hover:bg-gray-200 hover:text-black option" data-option="B" id="optionB">(B) There are infinitely many strictly increasing functions from S to T</div>
+    <div class="border-2 border-white rounded-lg text-xl text-white p-4 hover:bg-gray-200 hover:text-black option" data-option="C" id="optionC">(C) The number of continuous functions from S to T is at most 120 </div>
+    <div class="border-2 border-white rounded-lg text-xl text-white p-4 hover:bg-gray-200 hover:text-black option" data-option="D" id="optionD">(D) Every continuous function from S to T is differentiable</div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const options = document.querySelectorAll('.option');
+
+        function resetOptions() {
+          options.forEach(option => {
+            option.classList.remove('bg-green-500', 'bg-red-500', 'text-white');
+            option.classList.add('text-white', 'hover:bg-gray-200', 'hover:text-black');
+          });
+        }
+
+        function updateOptionColors(clickedOption) {
+          if (clickedOption === 'B') {
+            resetOptions();
+            document.getElementById('optionB').classList.add('bg-red-500', 'text-white');
+            document.getElementById('optionB').classList.remove('hover:bg-gray-200', 'hover:text-black');
+          } else {
+            resetOptions();
+            ['A', 'C', 'D'].forEach(option => {
+              document.getElementById('option' + option).classList.add('bg-green-500', 'text-white');
+              document.getElementById('option' + option).classList.remove('hover:bg-gray-200', 'hover:text-black');
+            });
+          }
+        }
+
+        options.forEach(option => {
+          option.addEventListener('click', function() {
+            const optionId = this.getAttribute('data-option');
+            updateOptionColors(optionId);
+          });
+        });
+      });
+    </script>
+
+
+
+
+
+   </div>
+</div>
+</div>
+</Div>
+</section>
+<section class=" grid lg:md:flex justify-center items-center lg:md:mt-0 mt-10">
+<div class="text-center my-10 px-20">
+    <h1 class="text-4xl font-bold mb-4" data-aos="fade-up">Why Choose Us?</h1>
+    <p class="text-xl text-gray-600 mb-8 "  style="font-family: 'Khand', sans-serif;" data-aos="fade-up">Discover the unique benefits that make our platform the go-to choice for JEE aspirants aiming for success.</p>
+    <div class="grid md:grid-cols-3 gap-4"  style="font-family: 'Khand', sans-serif;">
+        <div class="bg-white rounded-lg p-8 flex flex-col items-start">
+            <div class="bg-gray-200 h-10 w-10 p-2 rounded-full" data-aos="flip-left"><i class="fa fa-book-open text-gray-700"></i></div>
+            <h2 class="text-2xl font-bold mb-2">Expert Curated Content</h2>
+            <p class="text-gray-600 text-left">Access a vast library of meticulously curated questions and explanations crafted by JEE experts.</p>
+        </div>
+        <div class="bg-white rounded-lg p-8 flex flex-col items-start">
+            <div class="bg-gray-200 p-2 h-10 w-10  rounded-full" data-aos="flip-left"><i class="fa fa-user-cog text-gray-700"></i></div>
+            <h2 class="text-2xl font-bold mb-2">Personalized Learning</h2>
+            <p class="text-gray-600 text-left">Get personalized recommendations and practice sets tailored to your strengths and weaknesses.</p>
+        </div>
+        <div class="bg-white rounded-lg p-8 flex flex-col items-start">
+            <div class="bg-gray-200 p-2 h-10 w-10  rounded-full" data-aos="flip-left"><i class="fa fa-chart-line text-gray-700"></i></div>
+            <h2 class="text-2xl font-bold mb-2">Real-Time Progress Tracking</h2>
+            <p class="text-gray-600 text-left">Monitor your progress with real-time analytics and insights to guide your study strategy.</p>
+        </div>
+        <div class="bg-white rounded-lg p-8 flex flex-col items-start">
+            <div class="bg-gray-200 p-2 h-10 w-10  rounded-full" data-aos="flip-left"><i class="fa fa-tools text-gray-700"></i></div>
+            <h2 class="text-2xl font-bold mb-2">Interactive Study Tools</h2>
+            <p class="text-gray-600 text-left">Engage with interactive simulations and quizzes for a more hands-on learning experience.</p>
+        </div>
+        <div class="bg-white rounded-lg p-8 flex flex-col items-start">
+            <div class="bg-gray-200 p-2 h-10 w-10  rounded-full" data-aos="flip-left"><i class="fa fa-pencil-ruler text-gray-700"></i></div>
+            <h2 class="text-2xl font-bold mb-2">Comprehensive Test Series</h2>
+            <p class="text-gray-600 text-left">Challenge yourself with a wide range of tests designed to simulate the actual exam environment.</p>
+        </div>
+        <div class="bg-white rounded-lg p-8 flex flex-col items-start">
+            <div class="bg-gray-200 p-2 h-10 w-10  rounded-full" data-aos="flip-left"><i class="fa fa-headphones text-gray-700"></i></div>
+            <h2 class="text-2xl font-bold mb-2">24/7 Expert Support</h2>
+            <p class="text-gray-600 text-left">Get your doubts cleared any time with our round-the-clock expert support system.</p>
+        </div>
+    </div>
+</div>
+</section>
+<section class="px-20 ">
+<div class="flex justify-center items-center lg:md:h-96 p-10 rounded-[40px] bg-black " data-aos="zoom-in">
+    <div class="text-4xl" data-aos="zoom-in"></div>
+  <div class="text-center mt-8" data-aos="zoom-in">
+    <h2 class="text-3xl text-white font-bold mb-4" data-aos="zoom-in" >Ready to Ace Your JEE?</h2>
+    <p class="text-xl text-white mb-6 px-10 hidden lg:md:block " style="font-family: 'Khand', sans-serif;" data-aos="zoom-in">Join the community of thousands of studying studying tirelessly, aiming to clear one of India's toughest examinations </p>
+    <div class="flex justify-center items-center" data-aos="zoom-in">
+        <a onclick="openLoginForm()" style="font-family: 'Khand', sans-serif;  box-shadow: none;" onmouseover="this.style.boxShadow='0 0 20px #000000'" onmouseout="this.style.boxShadow='none'"" class="  bg-black h-16 w-48 text-xl rounded-full hover:bg-white text-white hover:text-black border-2 hover:border-black transition ease-in-out flex flex-cols justify-center items-center">
+    
+        Get Started &nbsp; <i class="fa-solid fa-arrow-right "></i>
+        </a> </div>
+  </div>
+  
+</div>
+<div id="loginForm" class="hidden fixed inset-0 bg-black bg-opacity-75 flex justify-center items-center">
+  <div class="bg-white p-5 rounded-lg">
+    <form id="loginFormContent">
+      <div class="mb-4">
+        <label for="username" class="block text-sm font-medium text-gray-700">Username</label>
+        <input type="text" id="username" name="username" class="mt-1 p-2 w-full border-gray-300 rounded-md shadow-sm" required>
+      </div>
+      <div class="mb-4">
+        <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+        <input type="password" id="password" name="password" class="mt-1 p-2 w-full border-gray-300 rounded-md shadow-sm" required>
+      </div>
+      <div class="flex items-center justify-between">
+        <button type="submit" class="py-2 px-4 bg-black text-white rounded hover:bg-opacity-90">Login</button>
+        <button type="button" onclick="closeLoginForm()" class="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-600">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
+<script>
+  function openLoginForm() {
+    document.getElementById('loginForm').style.display = 'flex';
+  }
+  function closeLoginForm() {
+    document.getElementById('loginForm').style.display = 'none';
+  }
+  document.addEventListener('DOMContentLoaded', function() {
+    const menuButton = document.querySelector('.menu-button');
+    const menu = document.querySelector('.menu');
+
+    menuButton.addEventListener('click', function() {
+      menu.classList.toggle('open');
+    });
+  });
+</script>
+
+
+
+
+</section>
+<Section class="lg:md:mt-0 mt-10">
+<div class="text-center p-10">
+    <h2 class="text-4xl text-black font-bold mb-6 "  data-aos="fade-down">What Our Students Say</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-down">
+            <p class="text-gray-800 text-base mb-4" style="font-family: 'Khand', sans-serif;">"I never believed I could achieve such a high score in JEE, but the resources and community support here made it possible!"</p>
+            <div class="flex items-center">
+                <img class="w-10 h-10 rounded-full mr-4" src="peep-54.svg" alt="Avatar of Testimonial 1">
+                <div class="text-sm">
+                    <p class="text-gray-900 leading-none">Rahul Kumar</p>
+                    <p class="text-gray-600">JEE Aspirant</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-down">
+            <p class="text-gray-800 text-base mb-4" style="font-family: 'Khand', sans-serif;">"I never believed I could achieve such a high score in JEE, but the resources and community support here made it possible!"</p>
+            <div class="flex items-center">
+                <img class="w-10 h-10 rounded-full mr-4" src="peep-68.svg" alt="Avatar of Testimonial 1">
+                <div class="text-sm">
+                    <p class="text-gray-900 leading-none">Rahul Kumar</p>
+                    <p class="text-gray-600">JEE Aspirant</p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow-lg" data-aos="fade-down">
+            <p class="text-gray-800 text-base mb-4" style="font-family: 'Khand', sans-serif;">"I never believed I could achieve such a high score in JEE, but the resources and community support here made it possible!"</p>
+            <div class="flex items-center">
+                <img class="w-10 h-10 rounded-full mr-4" src="bust.svg" alt="Avatar of Testimonial 1">
+                <div class="text-sm">
+                    <p class="text-gray-900 leading-none">Rahul Kumar</p>
+                    <p class="text-gray-600">JEE Aspirant</p>
+                </div>
+            </div>
+        </div>
+</Section>
+<footer class="w-full bg-black py-20 px-20 mt-20 grid lg:md:flex lg:md:flex-col lg:flex-row justify-between items-center relative">
+    <div class="max-w-6xl w-full px-4 text-white lg:md:flex lg:md:flex-row grid justify-between items-start">
+        <div class="w-full lg:w-1/3">
+            <div class="mb-8">
+                <p class="text-xl mb-2">Connect With Us</p>
+                <div class="flex flex-col lg:flex-row lg:space-x-4">
+                    <a href="#" class=" mb-2 lg:mb-0 hover:underline underline-offset-4">Facebook</a>
+                    <a href="#" class="hover:underline underline-offset-4 mb-2 lg:mb-0">Twitter</a>
+                    <a href="#" class="hover:underline underline-offset-4 mb-2 lg:mb-0">Instagram</a>
+                    <a href="#" class="hover:underline underline-offset-4 mb-2 lg:mb-0">LinkedIn</a>
+                </div>
+            </div>
+            <div class="mb-8">
+                <p>&copy; 2023 Your Company. All rights reserved.</p>
+                <div class="flex flex-col lg:flex-row lg:space-x-4">
+                    <a href="#" class="hover:text-gray-400 text-sm mb-2 lg:mb-0">Privacy Policy</a>
+                    <a href="#" class="hover:text-gray-400 text-sm">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+        <hr class="mt-5 mb-5 block lg:md:hidden">
+        <div class="hidden lg:block w-0.5 bg-gray-500 mx-4"></div>
+        <div class="w-full lg:w-1/2 xl:w-1/3">
+            <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
+            <form>
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-300">Name</label>
+                    <input style="font-family: 'Khand', sans-serif;" type="text" id="name" name="name" class="mt-1 p-2 w-full bg-transparent border-b border-gray-500 text-white focus:outline-none focus:border-white" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+                    <input style="font-family: 'Khand', sans-serif;" type="email" id="email" name="email" class="mt-1 p-2 w-full bg-transparent border-b border-gray-500 text-white focus:outline-none focus:border-white" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-sm font-medium text-gray-300">Message</label>
+                    <textarea style="font-family: 'Khand', sans-serif;" id="message" name="message" rows="4" class="mt-1 p-2 w-full bg-transparent border-b border-gray-500 text-white focus:outline-none focus:border-white" required></textarea>
+                </div>
+                <div class="flex justify-end">
+                    <button type="submit" class="py-2 px-4 bg-transparent border border-white w-32 text-white rounded-full hover:bg-white hover:text-black transition ease-in-out">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+      <div class="absolute bottom-5 underline underline-offset-4 left-5 text-white">
+          <a href="adityamadan.tech">Developed By Aditya Madan</a>
+          
+      </div>
+  </div>
+
+  
+</footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+  AOS.init();
+</script>
+</body>
+</html>
